@@ -219,15 +219,7 @@ class ArgumentationFramework:
 
         return retval
 
-    def print_dot_graph(self, path, Args=set()):
-        """Prints the framework to a file.
-        Writes using extension for type of file to write.
-        If extension isn't known defaults to pdf
-        If Args is given marks all elements of Args with a doublecircle
-
-        Possible formats:
-        jpg, jpeg, png, pdf, ps
-        """
+    def to_dot(self, Args=set()):
         if type(Args) is not set:
             Args = set(Args)
 
@@ -246,6 +238,21 @@ class ArgumentationFramework:
         for arg in Args:
             graph.get_node(str(arg)).pop().set_shape('doublecircle')
 
+        return graph
+
+    def print_dot_graph(self, path, Args=set()):
+        """Prints the framework to a file.
+        Writes using extension for type of file to write.
+        If extension isn't known defaults to pdf
+        If Args is given marks all elements of Args with a doublecircle
+
+        Possible formats:
+        jpg, jpeg, png, pdf, ps
+        """
+        if type(Args) is not set:
+            Args = set(Args)
+
+        graph = self.to_dot(Args)
 
         func = graph.write_pdf
         if path.endswith('.jpg'):
