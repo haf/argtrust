@@ -17,4 +17,6 @@ class BeliefBase:
 
     def query(self, who, query):
         """Given an agent in the socialnetwork and a query (a predicate)
-        returns an argumentation framework that 
+        returns an argumentation framework that
+        """
+        0
