@@ -10,4 +10,3 @@ Belief = _namedtuple('Belief', ['agent', 'predicate', 'level'])
 Argument = _namedtuple('Argument', ['predicates', 'conclusion'])
 Labelling = _namedtuple('Labelling', ['inside', 'outside', 'undecided'])
 Attack = _namedtuple('Attack', ['attacker', 'attacked'])
-
