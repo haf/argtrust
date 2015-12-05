@@ -32,3 +32,16 @@ ArgumentationFramework
 -
 
 A Dungian argument framework
+
+
+## Usage
+
+``` bash
+pip install -r requirements.txt
+brew install graphviz
+./tests
+```
+
+``` python
+from argtrust.framework import ArgumentationFramework
+```
