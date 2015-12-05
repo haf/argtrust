@@ -1,2 +1,3 @@
-pydot2==1.0.33
+argtrust==0.1.0
+-e git+https://github.com/nlhepler/pydot.git@adf18a858a63b321b7e4ffd964a24d73add1bf4f#egg=pydot-master
 pyparsing==2.0.6
