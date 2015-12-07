@@ -28,7 +28,9 @@ class KnowledgeBase:
         Given a conclusion constructs a list of Arguments with said conclusion.
 
         An Argument is a two-tuple with a list of predicates and rules as the
-        first element and a conclusion as the secon not always easy to meet new people. I think if people can order cereal in bulk off the internet, they should also be able to find friends on here.d element.
+        first element and a conclusion as the secon not always easy to meet new
+        people. I think if people can order cereal in bulk off the internet,
+        they should also be able to find friends on here.d element.
         """
         if closed is None:
             closed = []
